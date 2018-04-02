@@ -1,0 +1,135 @@
+.features {
+    .title {
+        color: #333333;
+        font-family: Lato;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__content {
+        padding: 23px;
+        .disc {
+            color: #333333;
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        .regprice {
+            color: #777777;
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        .price {
+            color: #e95924;
+            font-family: Lato;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+        .shipping {
+            color: #ea6433;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+        .btn {
+            padding-left: 0;
+            margin-top: 10px;
+            a {
+                background-color: #e95924;
+                color: #ffffff;
+                font-family: Lato;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 20px;
+                padding: 17px 20px;
+                text-decoration: none;
+                position: relative;
+                &::after {
+                    content: "\f07a";
+                    font-family: FontAwesome;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: -58px;
+                    background-image: url(../img/layer-28.png);
+                    background-repeat: no-repeat;
+                    width: 58px;
+                    height: 100%;
+                    font-size: 30px;
+                    text-align: center;
+                    padding-top: 18px;
+                }
+                &:hover {
+                    padding: 17px 35px;
+                    transition: all 1s ease-out;
+                }
+            }
+        }
+        a.read {
+            color: #777777;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 24px;
+            text-decoration: underline;
+            padding-left: 3px;
+            &:hover {
+                color: #ea6433;
+            }
+        }
+        i {
+            padding: 0 3px;
+            &.min {
+                color: #d4d4d4;
+            }
+            &:hover {
+                color:black;
+            }
+        }
+    }
+    &__block {
+        border: 1px solid #f2f2f2;
+        padding: 0 !important;
+        margin: 10px;
+        overflow: hidden;
+        &::after {
+            content: "SALE!";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 8px;
+            background-image: url(../img/2-layers2.png);
+            background-repeat: no-repeat;
+            width: 85px;
+            height: 57px;
+            color: #000000;
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        &-image {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #f2f2f2;
+            transition: all 1s ease-out;
+            overflow: hidden;
+            &:hover {
+                transform: scale(1.1);
+                }
+
+        }
+    }
+    .col-3 {
+        max-width: 23%;
+    }
+    
+}
